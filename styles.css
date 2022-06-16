@@ -1,0 +1,358 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 90vw;
+    overflow: hidden;
+    background: white;
+    /* background: url("assets/lightbg.png") no-repeat center; */
+    background-clip: border-box;
+    background-size: cover;
+    overflow: visible;
+}
+
+body,
+html {
+    -webkit-tap-highlight-color: none;
+    /* -webkit-backface-visibility: hidden; */
+    /* -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden; */
+}
+
+
+/* html {
+    display: none;
+} */
+
+* {
+    --translate: translate3d(0, 0, 0);
+    -webkit-transform: var(--translate);
+    -moz-transform: var(--translate);
+    transform: var(--translate);
+}
+
+.lm-main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 12vw;
+    width: 13vw;
+    font-family: sans-serif;
+    background-color: transparent;
+    border: solid black;
+    font-size: 1.34vw;
+    border-radius: 6px;
+    font-family: 800;
+    color: black;
+    text-decoration: none;
+}
+
+body::-webkit-backface-visibility body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.lm-main:hover {
+    cursor: grab;
+}
+
+.nvbar {
+    background-color: white;
+    display: flex;
+    height: 3.4vw;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+}
+
+.cn-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.4vw;
+    display: inline-block;
+    position: relative;
+    margin-left: 3vw;
+    white-space: nowrap;
+    margin-top: 2.5px;
+    left: 9vw;
+    color: black;
+    padding: 1vw;
+    text-decoration: none;
+}
+
+.cn-title-search {
+    position: relative;
+    margin-left: 18vw;
+    display: flex;
+    width: fit-content;
+    font-size: 1.1vw;
+    border: none;
+    left: 0;
+    background: none;
+    float: right;
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.cn-title-search-icon {
+    position: relative;
+    margin-left: 1.5vw;
+    margin-left: auto;
+    margin-top: 0.5vw;
+    margin-right: auto;
+    display: flex;
+    border: transparent;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cn-title-a {
+    text-decoration: none;
+    color: black;
+}
+
+.cn-title-title {
+    /* width: 3.4vw; */
+    font-size: 1.4vw;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 3.8px;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    left: 1.2vw;
+    /* height: 3.4vw; */
+}
+
+.cn-title:hover {
+    color: #00aeff;
+    cursor: grab;
+}
+
+.cn-title-a:hover {
+    color: #00aeff;
+    cursor: grab;
+}
+
+.cn-dropdown {
+    display: none;
+    position: relative;
+    overflow: scroll;
+    position: absolute;
+    background-color: white;
+    min-width: 110px;
+    box-shadow: 0px 84x 13px 0px rgba(0, 0, 0, 0.18);
+    /* z-index: 1; */
+    padding: 12px 12px;
+}
+
+hr {
+    width: 110.4%;
+}
+
+.cn-dropdown-cnt {
+    font-size: 14.3px;
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.cn-title:hover .cn-dropdown {
+    display: block;
+}
+
+.cn-dropdown-cnt:hover {
+    color: #00aeff;
+}
+
+.cn-title-search:hover {
+    text-decoration: none;
+}
+
+.cn-title-selected {
+    font-weight: 550;
+}
+
+p {
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 15px;
+    word-spacing: 1px;
+}
+
+.main-quote {
+    margin-top: 17vw;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", roboto sans-serif;
+    font-size: 2.5vw;
+    font-weight: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 1vw;
+    margin-left: 17vw;
+    color: black;
+    display: flex;
+    width: 68vw;
+    height: 10vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.192);
+    border: solid transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+}
+
+.about-who {
+    background: white;
+    width: 50%;
+    /* height: 58%; */
+    margin-right: auto;
+    margin-left: auto;
+    height: 24.6vw;
+    border-radius: 11px;
+    margin-top: 150px;
+    position: relative;
+    z-index: -1;
+    font-family: sans-serif;
+    box-shadow: 0px 84x 13px 3px rgba(0, 0, 0, 0.50);
+}
+
+.about-who-img {
+    clip-path: circle();
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+    bottom: 12.1vw;
+    position: fixed;
+    z-index: -100000;
+    left: 13vw;
+    /* top: 8vw; */
+    height: 22vw;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.noscript {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    font-size: 2vw;
+    color: white;
+    margin-top: 1.2vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+
+/* .about-who-title {
+    position: relative;
+    color: black;
+    display: flex;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+} */
+
+.about-who-body {
+    font-size: 1.8vw;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 490;
+    position: relative;
+    bottom: 3vw;
+    right: 3vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    align-content: center;
+    line-break: loose;
+    word-wrap: break-word;
+}
+
+h4 {
+    color: black
+}
+
+p {
+    color: #262626
+}
+
+a {
+    color: blue;
+}
+
+.social {
+    background: #183153;
+    display: flex;
+    color: white;
+    font-size: 3vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 4.5vw;
+    margin-left: 1.2vw;
+    /* padding-left: 2.1vw; */
+    border-radius: 30px;
+    left: 16.5vw;
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        color: white;
+        background: black;
+        /* background-image: url("https://wallpaperaccess.com/full/123112.jpg"); */
+    }
+    .cn-title-title {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    .nvbar {
+        background: black;
+    }
+    a {
+        color: #00aeff;
+    }
+    h4 {
+        color: honeydew;
+    }
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .cn-title {
+        display: none;
+    }
+} */
